@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint-fix": "eslint 'src/**' --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "lint-staged":{
+    "*.ts": "npm run lint-fix"
+  },
   "devDependencies": {
     "@types/node": "^17.0.25",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
@@ -18,6 +22,8 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.2.0",
     "git-commit-msg-linter": "^4.1.2",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.4.0",
     "typescript": "^4.6.3"
   }
 }
