@@ -5,4 +5,7 @@ echo "#Lint-staged"
 npx lint-staged
 
 echo "#Tests"
-# npm test
+#npm test
+
+echo "#Tests:staged"
+#npm test:staged

@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint-fix": "eslint 'src/**' --fix",
-    "test": "jest"
+    "lint-fix": "eslint --fix src/**/*",
+    "test": "jest",
+    "test:staged": "jest"
   },
   "keywords": [],
   "author": "",
